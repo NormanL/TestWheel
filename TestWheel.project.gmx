@@ -26,6 +26,9 @@
     <scripts name="Score Logic">
       <script>scripts\set_color_to_match.gml</script>
     </scripts>
+    <scripts name="Color Getter Logic">
+      <script>scripts\set_color_getter_location.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_timer</font>

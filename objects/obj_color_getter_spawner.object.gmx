@@ -25,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Test color getter postion is at x160 y 96
-instance_create(160, 96, obj_color_getter);
-
-//degrees = irandom(360);
-//x = cos( degtorad( degrees ) ) * 150;  //This is the x position around a circle centered at (0,0)
-//y = sin( degtorad( degrees ) ) * 150;  //This is the y position around the circle centered at (0,0)
+            <string>set_color_getter_location();
+instance_create(color_getter_x, color_getter_y, obj_color_getter);
 </string>
           </argument>
         </arguments>
