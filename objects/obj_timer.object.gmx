@@ -103,7 +103,9 @@ game_restart()
             <kind>1</kind>
             <string>draw_set_font(font_timer);
 draw_set_color(c_black);
-draw_text(x + 96, y + 32, string(global.time));
+x = 190;
+y= 32;
+draw_text(x, y, string(global.time));
 </string>
           </argument>
         </arguments>

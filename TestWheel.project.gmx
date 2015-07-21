@@ -6,14 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wheel</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_triangle</sprite>
-    <sprite>sprites\spr_2color</sprite>
-    <sprite>sprites\spr_color_getter</sprite>
-    <sprite>sprites\spr_wheel_2part</sprite>
-    <sprite>sprites\spr_wheel_3part</sprite>
-    <sprite>sprites\spr_wheel_4part</sprite>
+    <sprites name="Test Sprites">
+      <sprite>sprites\spr_wheel</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_wheel_4part</sprite>
+      <sprite>sprites\spr_wheel_3part</sprite>
+      <sprite>sprites\spr_wheel_2part</sprite>
+      <sprite>sprites\spr_color_getter</sprite>
+      <sprite>sprites\spr_2color</sprite>
+      <sprite>sprites\spr_triangle</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,6 +28,9 @@
     <scripts name="Score Logic">
       <script>scripts\set_color_to_match.gml</script>
     </scripts>
+    <scripts name="Color Getter Logic">
+      <script>scripts\set_color_getter_location.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_timer</font>
@@ -36,12 +41,12 @@
     <object>objects\obj_surface_wheel</object>
     <object>objects\obj_color_getter</object>
     <object>objects\obj_color_getter_spawner</object>
-    <object>objects\obj_color_to_match</object>
     <objects name="junk">
       <object>objects\obj_wheel</object>
       <object>objects\obj_surface_square_sprite</object>
       <object>objects\obj_surface_test</object>
       <object>objects\obj_wheel_rotate_test</object>
+      <object>objects\obj_color_to_match</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -51,7 +56,7 @@
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>0</IsTutorial>
+    <IsTutorial>-1</IsTutorial>
     <TutorialName>C:\Users\puddi_000\AppData\Local\GameMaker-Studio\tutorials\Virtual_Keys\</TutorialName>
     <TutorialPage>0</TutorialPage>
   </TutorialState>
