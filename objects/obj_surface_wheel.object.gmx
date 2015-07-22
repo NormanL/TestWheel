@@ -94,6 +94,11 @@ draw_set_circle_precision(128); // Set the circle precision for all circles draw
 if (sprite_exists(wheel)) {
     draw_sprite_ext(wheel, 0, 185, 255, 1, 1, image_angle, c_white, 1);
     
+    if (global.reset_wheel_position == true) {
+        image_angle = 0;
+        global.reset_wheel_position = false;
+    }
+    
     // Rotate the sprite
     if(mouse_check_button_pressed(mb_left))
     {

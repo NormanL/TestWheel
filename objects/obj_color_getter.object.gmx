@@ -64,6 +64,7 @@ if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
     instance_destroy();
     with (obj_color_getter_spawner) instance_destroy();
     instance_create(0, 0, obj_color_getter_spawner);
+    global.reset_wheel_position = true;
 }
 </string>
           </argument>

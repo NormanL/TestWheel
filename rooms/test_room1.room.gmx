@@ -13,7 +13,9 @@
   <code>globalvar get_new_sprite;
 globalvar color_to_match;
 globalvar previous_color_to_match;
+globalvar reset_wheel_position;
 get_new_sprite = false;
+reset_wheel_position = false;
 
 // List of possible colors
 randomize();
