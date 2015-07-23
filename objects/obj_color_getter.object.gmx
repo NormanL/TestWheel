@@ -58,13 +58,14 @@ if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
   &amp;&amp; global.color_to_match == color
   &amp;&amp; (get_new_sprite == false)) {
     score += (100 * (global.time / 2)); // TODO: score multiplier 
-    global.get_new_sprite = true;
-    set_color_to_match();
-    global.time = 10;
-    instance_destroy();
-    with (obj_color_getter_spawner) instance_destroy();
-    instance_create(0, 0, obj_color_getter_spawner);
-    global.reset_wheel_position = true;
+    lives += 1; // increase the lives (level counter)
+    global.get_new_sprite = true; // trigger getting a new color getter 
+    set_color_to_match(); // get a new color to match
+    global.time = 10; // reset the timer TODO: make time value decrease over time
+    instance_destroy(); // destroy the color getter so we can spawn a new one
+    with (obj_color_getter_spawner) instance_destroy(); // also destroy the spawner
+    instance_create(0, 0, obj_color_getter_spawner); // create a new spawner
+    global.reset_wheel_position = true; // reset the wheel to original position
 }
 </string>
           </argument>
