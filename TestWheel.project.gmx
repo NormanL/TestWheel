@@ -24,6 +24,8 @@
     <scripts name="Circle Logic">
       <script>scripts\draw_circle_part_color.gml</script>
       <script>scripts\draw_circle_primitive_part.gml</script>
+      <script>scripts\set_circle_parts.gml</script>
+      <script>scripts\draw_wheel.gml</script>
     </scripts>
     <scripts name="Score Logic">
       <script>scripts\set_color_to_match.gml</script>

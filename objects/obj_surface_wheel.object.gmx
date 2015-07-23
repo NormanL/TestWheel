@@ -87,7 +87,6 @@ if (surface_exists(surface)) {
 x_pos = 150;
 y_pos = 150;
 radius = 150;
-angle_size = 91;
 
 draw_set_circle_precision(128); // Set the circle precision for all circles drawn after this
 
@@ -113,12 +112,7 @@ if (sprite_exists(wheel)) {
 } else {
     surface = surface_create(300,300);
     surface_set_target(surface);
-
-    // Draw a circle with 4 slices
-    draw_circle_part_color(x_pos, y_pos, radius, angle_size, 0, c_blue, c_blue, false);
-    draw_circle_part_color(x_pos, y_pos, radius, angle_size, 90, c_red, c_red, false);
-    draw_circle_part_color(x_pos, y_pos, radius, angle_size, 180, c_aqua, c_aqua, false);
-    draw_circle_part_color(x_pos, y_pos, radius, angle_size, 270, c_green, c_green, false);
+    draw_wheel(x_pos, y_pos, radius);
     draw_circle(x_pos, y_pos, 5, false); // dot in the middle of the circle
 
     surface_reset_target();

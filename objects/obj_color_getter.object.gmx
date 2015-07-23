@@ -62,10 +62,15 @@ if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
     global.get_new_sprite = true; // trigger getting a new color getter 
     set_color_to_match(); // get a new color to match
     global.time = 10; // reset the timer TODO: make time value decrease over time
+    
     instance_destroy(); // destroy the color getter so we can spawn a new one
     with (obj_color_getter_spawner) instance_destroy(); // also destroy the spawner
+    with (obj_surface_wheel) instance_destroy();
     instance_create(0, 0, obj_color_getter_spawner); // create a new spawner
+    instance_create(160, 160, obj_surface_wheel);
+    
     global.reset_wheel_position = true; // reset the wheel to original position
+    set_circle_parts(); // check to see if the circle needs more parts
 }
 </string>
           </argument>
