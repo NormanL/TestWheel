@@ -20,10 +20,10 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\draw_circle_primitive_part.gml</script>
     <script>scripts\print.gml</script>
     <scripts name="Circle Logic">
       <script>scripts\draw_circle_part_color.gml</script>
-      <script>scripts\draw_circle_primitive_part.gml</script>
       <script>scripts\set_circle_parts.gml</script>
       <script>scripts\draw_wheel.gml</script>
     </scripts>
@@ -32,6 +32,7 @@
     </scripts>
     <scripts name="Color Getter Logic">
       <script>scripts\set_color_getter_location.gml</script>
+      <script>scripts\check_if_colors_matched_on_spawn.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

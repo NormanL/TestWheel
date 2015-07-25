@@ -5,7 +5,7 @@ switch (spawn_location) {
     // top 
     case 0:
         color_getter_x = 185;
-        color_getter_y = 112;
+        color_getter_y = 112;     
         helper_x = 185;
         helper_y = 89;        
         break;

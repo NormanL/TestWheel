@@ -56,21 +56,24 @@ ypos = obj_color_getter.y;
 
 if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
   &amp;&amp; global.color_to_match == color
-  &amp;&amp; (get_new_sprite == false)) {
+  &amp;&amp; (global.get_new_color_getter == false)) {
     score += (100 * (global.time / 2)); // TODO: score multiplier 
     lives += 1; // increase the lives (level counter)
-    global.get_new_sprite = true; // trigger getting a new color getter 
-    set_color_to_match(); // get a new color to match
-    global.time = 10; // reset the timer TODO: make time value decrease over time
     
     instance_destroy(); // destroy the color getter so we can spawn a new one
     with (obj_color_getter_spawner) instance_destroy(); // also destroy the spawner
-    with (obj_surface_wheel) instance_destroy();
     instance_create(0, 0, obj_color_getter_spawner); // create a new spawner
-    instance_create(160, 160, obj_surface_wheel);
     
-    global.reset_wheel_position = true; // reset the wheel to original position
+    // TODO: set the lives increments, this is only temporary for testing purposes
+    if( lives == 2 || lives == 4 || lives == 6 || lives == 8) {
+        with (obj_surface_wheel) instance_destroy();
+        instance_create(160, 160, obj_surface_wheel);
+    }
+    
+    global.get_new_color_getter = true; // trigger getting a new color getter 
+    global.time = 10; // reset the timer TODO: make time value decrease over time
     set_circle_parts(); // check to see if the circle needs more parts
+    set_color_to_match(); // get a new color to match
 }
 </string>
           </argument>
