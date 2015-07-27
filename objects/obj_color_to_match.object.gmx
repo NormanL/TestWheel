@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_circle_colour(32, 400, 20, global.color_to_match, global.color_to_match, false);
+draw_text(32, 420, global.circle_parts);
 </string>
           </argument>
         </arguments>

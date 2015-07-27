@@ -49,4 +49,3 @@ switch (global.circle_parts) {
         draw_circle_part_color(x_pos, y_pos, radius, angle_size, 300, c_fuchsia, c_fuchsia, false);
         break;
 }
-

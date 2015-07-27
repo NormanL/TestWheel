@@ -1,6 +1,6 @@
 randomize();
 
-if ( global.get_new_color_getter == true) {
+if (global.spawn_new_color_getter == true) {
     // List of possible colors
     colors[0] = c_red;
     colors[1] = c_blue;
@@ -12,5 +12,4 @@ if ( global.get_new_color_getter == true) {
     // get new color to match
     global.color_to_match = colors[irandom(global.circle_parts - 1)];
     global.previous_color_to_match = global.color_to_match;
-    global.get_new_color_getter = false;
 }

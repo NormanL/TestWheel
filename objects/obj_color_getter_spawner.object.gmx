@@ -25,8 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>set_color_getter_location();
-instance_create(color_getter_x, color_getter_y, obj_color_getter);
+            <string>globalvar spawn_new_color_getter;
+spawn_new_color_getter = true;
+
+//set_color_getter_location();
+//instance_create(color_getter_x, color_getter_y, obj_color_getter);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.spawn_new_color_getter == true) {
+    set_color_getter_location();
+    check_if_colors_matched_on_spawn(color_getter_x, color_getter_y);
+    instance_create(color_getter_x, color_getter_y, obj_color_getter);
+    global.spawn_new_color_getter = false;
+}
 </string>
           </argument>
         </arguments>
@@ -49,7 +80,7 @@ instance_create(color_getter_x, color_getter_y, obj_color_getter);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_circle_colour(helper_x, helper_y, 15, global.color_to_match, global.color_to_match, false);
+            <string>//draw_circle_colour(helper_x, helper_y, 15, global.color_to_match, global.color_to_match, false);
 </string>
           </argument>
         </arguments>

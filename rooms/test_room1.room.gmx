@@ -72,8 +72,9 @@ color_to_match = colors[irandom(1)]; // initial color to match</code>
   <instances>
     <instance objName="obj_timer" x="320" y="32" name="inst_9E87D94B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_surface_wheel" x="184" y="154" name="inst_4E1D8D66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scoreController" x="32" y="32" name="inst_F4FC7CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_color_getter_spawner" x="184" y="127" name="inst_A7FE3BD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scoreController" x="32" y="32" name="inst_F4FC7CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_color_to_match" x="192" y="448" name="inst_557F5283" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
