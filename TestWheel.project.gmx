@@ -44,12 +44,12 @@
     <object>objects\obj_surface_wheel</object>
     <object>objects\obj_color_getter</object>
     <object>objects\obj_color_getter_spawner</object>
+    <object>objects\obj_color_to_match</object>
     <objects name="junk">
       <object>objects\obj_wheel</object>
       <object>objects\obj_surface_square_sprite</object>
       <object>objects\obj_surface_test</object>
       <object>objects\obj_wheel_rotate_test</object>
-      <object>objects\obj_color_to_match</object>
     </objects>
   </objects>
   <rooms name="rooms">

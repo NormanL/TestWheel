@@ -1,5 +1,5 @@
-var x_pos, y_pos, spawn_ok, can_check_color;
-can_check_color = false;
+var x_pos, y_pos;
+
 
 if (argument_count > 0) {
     x_pos = argument[0];

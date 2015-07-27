@@ -62,6 +62,7 @@ if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
     
     instance_destroy(); // destroy the color getter so we can spawn a new one
     global.spawn_new_color_getter = true; // spawn a new color getter at a different location
+    with (obj_color_to_match) instance_destroy();
     
     // TODO: set the lives increments, this is only temporary for testing purposes
     // Make sure this is consistent with set_circle_parts

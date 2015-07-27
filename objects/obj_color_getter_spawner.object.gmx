@@ -56,6 +56,7 @@ spawn_new_color_getter = true;
     set_color_getter_location();
     check_if_colors_matched_on_spawn(color_getter_x, color_getter_y);
     instance_create(color_getter_x, color_getter_y, obj_color_getter);
+    instance_create(helper_x, helper_y, obj_color_to_match);
     global.spawn_new_color_getter = false;
 }
 </string>
