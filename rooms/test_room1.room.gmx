@@ -15,10 +15,12 @@ globalvar color_to_match;
 globalvar circle_parts;
 globalvar previous_color_to_match;
 globalvar reset_wheel_position;
+globalvar color_getter_num;
 get_new_color_getter = false;
 circle_parts = 2; // default circle to 2 'slices'
 get_new_color_getter = false;
 reset_wheel_position = false;
+color_getter_num = 1; // default the number of color getters to 1
 
 // List of possible colors
 randomize();

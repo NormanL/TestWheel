@@ -69,10 +69,13 @@ if (!(mouse_check_button_pressed(mb_left) || mouse_check_button(mb_left))
     if( lives == 3 || lives == 8 || lives == 12 || lives == 16) {
         with (obj_surface_wheel) instance_destroy();
         instance_create(160, 160, obj_surface_wheel);
+        global.color_getter_num = 1;
     }
     
     set_circle_parts(); // check to see if the circle needs more parts
     set_color_to_match(); // get a new color to match
+    set_color_getter_num(); // check to see if we need an additional color getter
+    //print(global.color_getter_num);
 }
 </string>
           </argument>

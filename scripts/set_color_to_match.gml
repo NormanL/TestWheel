@@ -11,5 +11,4 @@ if (global.spawn_new_color_getter == true) {
     
     // get new color to match
     global.color_to_match = colors[irandom(global.circle_parts - 1)];
-    global.previous_color_to_match = global.color_to_match;
 }

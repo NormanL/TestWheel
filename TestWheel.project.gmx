@@ -33,6 +33,7 @@
     <scripts name="Color Getter Logic">
       <script>scripts\set_color_getter_location.gml</script>
       <script>scripts\check_if_colors_matched_on_spawn.gml</script>
+      <script>scripts\set_color_getter_num.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
